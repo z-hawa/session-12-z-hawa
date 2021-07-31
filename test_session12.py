@@ -1,7 +1,7 @@
 import math
 import os
-import session11
-from session11 import *
+import session12
+from session12 import *
 import inspect
 
 
@@ -13,7 +13,7 @@ def test_function_doc_string():
     """
     Test case to check whether the functions have docstrings or not.
     """
-    functions = inspect.getmembers(session11, inspect.isfunction)
+    functions = inspect.getmembers(session12, inspect.isfunction)
     for function in functions:
         assert function[1].__doc__
 
