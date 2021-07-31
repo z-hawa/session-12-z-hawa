@@ -68,4 +68,8 @@ class Polygon:
                 return item
 ```
 
+## Lazy properties
+To achieve this task , I simply assigned a "clone" state to every property. This clone state would be reassigned to None whenever the radius and/or circumradius are set. When these clone's properties are called, I calculate them and store them in their variable. This ensures the properties are calculated only when needed and are not taking up memory when not called.  <br>
+The clone states are present because properties cannot be assigned any value after class initialisation.
+
 - Note - I haven't added many test cases this time , but I've kept some related to the assignment and some related to the ones required everytime.
